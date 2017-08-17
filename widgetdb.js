@@ -16,7 +16,7 @@ class WidgetDB {
     constructor() {
         this.db = {}
     }
-    
+
     /**
      * Get a widget by its id.
      * @param {String} id - The widget id
@@ -24,7 +24,7 @@ class WidgetDB {
      * the value of the widget when fulfilled.
      */
     get(id) {
-        return wait().then(() => this.db[id])
+       return this.isItem(id).then(() => { return wait().then(() => this.db[id])})
     }
 
     /**

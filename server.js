@@ -30,7 +30,7 @@ app.get('/item/:id', function (req, res) {
         res.json({value: value});
 
     }).catch(function (error) {
-        res.json(404, error);
+        res.status(404).json(error)
 
     })
 });
@@ -51,8 +51,7 @@ app.post('/item', function (req, res) {
         res.json({ id: itemId });
 
     }).catch(function (error) {
-        res.json(404, error);
-
+        res.status(404).json(error)
     })
 });
 
@@ -74,7 +73,7 @@ app.put('/item/:id', function (req, res, next) {
         res.json({ id: itemId});
 
     }).catch(function (error) {
-        res.json(404, error);
+        res.status(404).json(error)
 
     })
 
