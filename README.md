@@ -18,8 +18,8 @@ A RESTful web service that exposes get, put, post over an HTTP interface for in 
 | Type | Request | Body | Response | Description
 | --- | --- | --- | --- | --- |
 | GET |  http://\<hostname\>:\<port\>/item/:id | --- | Success: {"value": "xyz"}, Error: Not Found | Get an item value for given id |
-| PUT |  http://\<hostname\>:\<port\>/item/:id | Success: {"value": "abc"}, Error: Not Found  | { "id" : "\<id\>" } | Update an item value for given id |
-| POST |  http://\<hostname\>:\<port\>/item | Success: {"value": "xyz"}, Error: Not Found  | { "id" : "\<generated id\>" } | Post a new item for given id |
+| PUT |  http://\<hostname\>:\<port\>/item/:id | {"value": "abc"} | Success: { "id" : "\<id\>" }, Error: Not Found   | Update an item value for given id |
+| POST |  http://\<hostname\>:\<port\>/item | {"value": "xyz"} | Success: { "id" : "\<generated id\>" }, Error: Not Found   | Post a new item for given id |
 
 
 ## Version
