@@ -1,3 +1,4 @@
+### Synopsis
 
 RESTful API for Widget DB
 =========
@@ -6,16 +7,14 @@ RESTful API for Widget DB
 
 A RESTful web service that exposes get, put, post over an HTTP interface for in memory data store
 
+### Installation
 
-## Installation
-
-```shell
  git clone https://github.com/aparnakavalgikar/proteus-widgetdb.git
 
  npm install
 ```
 
-## API Reference
+### API Reference
 
 | Type | Request | Body | Description
 | --- | --- | --- | --- |
@@ -24,6 +23,5 @@ A RESTful web service that exposes get, put, post over an HTTP interface for in 
 | POST |  http://<hostname>:<port>/item | Post a new item for given id |
 
 
-## Version
 * 1.0.0 Initial release
 
