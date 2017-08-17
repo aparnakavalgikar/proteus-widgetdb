@@ -19,7 +19,7 @@ A RESTful web service that exposes get, put, post over an HTTP interface for in 
 | --- | --- | --- | --- | --- |
 | GET |  http://\<hostname\>:\<port\>/item/:id | --- | { "value": "xyz" } | Get an item value for given id |
 | PUT |  http://\<hostname\>:\<port\>/item/:id | { "value": "abc" } | { "id" : "\<id\>" } | Update an item value for given id |
-| POST |  http://\<hostname\>:\<port\>/item | { "value": "xyz" } |  | { "id" : "\<generated id\>" } | Post a new item for given id |
+| POST |  http://\<hostname\>:\<port\>/item | { "value": "xyz" } | { "id" : "\<generated id\>" } | Post a new item for given id |
 
 
 ## Version
